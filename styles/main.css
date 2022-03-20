@@ -1,0 +1,11 @@
+.gridContainer {
+    display: grid;
+    min-width: 100px;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.gridItem {
+    background-color: aqua;
+    width: 20%;
+    height: auto;
+}
