@@ -1,11 +1,43 @@
-.gridContainer {
+.grid-container {
     display: grid;
-    min-width: 100px;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 12px;
 }
 
-.gridItem {
-    background-color: aqua;
-    width: 20%;
+.grid-header {
+    grid-column: span 4;
+}
+
+.grid-footer {
+    grid-column: span 4;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.grid-item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+img {
+    width: 100%;
     height: auto;
+}
+
+body {
+    color: white;
+    background-color: black;
 }
