@@ -28,3 +28,19 @@
     color: white;
     background-color: #4CAF50;
 }
+
+.side-animation {
+    width: 30%;
+    height: auto;
+}
+
+
+/* CSS Grid Code Start */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* CSS Grid Code End */
