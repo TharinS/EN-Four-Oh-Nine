@@ -37,10 +37,5 @@
 
 /* CSS Grid Code Start */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
 
 /* CSS Grid Code End */
