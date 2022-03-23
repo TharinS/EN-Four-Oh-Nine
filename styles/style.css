@@ -1,4 +1,30 @@
-.Logo {
+.logo {
     width: 8%;
     height: auto;
+}
+
+.title-font {
+    font-size: xx-large;
+    font-family: Didact Gothic;
+}
+
+.para-font {
+    font-family: Didact Gothic;
+    font-size: larger;
+}
+
+.menu-button {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #4CAF50;
 }
