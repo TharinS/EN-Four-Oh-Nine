@@ -1,5 +1,10 @@
 /* Topic Page */
 
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
 .table-border {
     border: 2px solid black;
     border-collapse: collapse;
@@ -7,5 +12,62 @@
     font-weight: bold;
 }
 
+.img-settings {
+    width: 100%;
+    height: auto;
+    max-width: 30%;
+}
 
-/* Topic Page */
+
+/* CSS Grid Start */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray !important;
+    grid-template-areas: "logo head head" "menu menu menu" "designL content1 designR" "designL content2 designR" "designL content3 designR" "footer footer footer";
+}
+
+.grid-item1 {
+    grid-area: logo;
+}
+
+.grid-item2 {
+    grid-area: head;
+    margin: auto;
+}
+
+.grid-item3 {
+    grid-area: menu;
+}
+
+.grid-item4 {
+    grid-area: designL;
+}
+
+.grid-item5 {
+    grid-area: content1;
+    padding-left: 10px;
+}
+
+.grid-item6 {
+    grid-area: content2;
+}
+
+.grid-item7 {
+    grid-area: content3;
+}
+
+.grid-item8 {
+    grid-area: designR;
+}
+
+.grid-item9 {
+    grid-area: footer;
+}
+
+
+/* CSS Grid End */
+
+
+/* Topic Page End*/
