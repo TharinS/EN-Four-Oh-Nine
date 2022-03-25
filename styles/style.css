@@ -23,9 +23,8 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: lightgray !important;
-    grid-template-areas: "logo head head" "menu menu menu" "designL content1 designR" "designL content2 designR" "designL content3 designR" "footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo head head head" "button1 button2 button3 button4" "designL content1 content1 designR" "designL content2 content2 designR" "designL content3 content3 designR" "footer footer footer footer";
 }
 
 .grid-item1 {
@@ -37,8 +36,20 @@ body {
     margin: auto;
 }
 
-.grid-item3 {
-    grid-area: menu;
+.grid-menu-button1 {
+    grid-area: button1;
+}
+
+.grid-menu-button2 {
+    grid-area: button2;
+}
+
+.grid-menu-button3 {
+    grid-area: button3;
+}
+
+.grid-menu-button4 {
+    grid-area: button4;
 }
 
 .grid-item4 {
