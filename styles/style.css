@@ -6,7 +6,11 @@ head {
 
 body {
     margin: 0;
-    min-height: 100%;
+    min-height: 100vh;
+}
+
+span {
+    padding-right: 20px;
 }
 
 .table-border {
@@ -17,7 +21,6 @@ body {
 }
 
 .img-settings {
-    width: 100%;
     height: auto;
     max-width: 30%;
 }
@@ -37,6 +40,7 @@ body {
 
 .grid-container {
     display: grid;
+    height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "logo head head head" "button1 button2 button3 button4" "designL content1 content1 designR" "designL content2 content2 designR" "designL content3 content3 designR" "footer footer footer footer";
 }
@@ -52,18 +56,22 @@ body {
 
 .grid-menu-button1 {
     grid-area: button1;
+    margin: auto;
 }
 
 .grid-menu-button2 {
     grid-area: button2;
+    margin: auto;
 }
 
 .grid-menu-button3 {
     grid-area: button3;
+    margin: auto;
 }
 
 .grid-menu-button4 {
     grid-area: button4;
+    margin: auto;
 }
 
 .grid-item4 {
@@ -77,6 +85,7 @@ body {
 
 .grid-item6 {
     grid-area: content2;
+    width: min-content;
 }
 
 .grid-item7 {
