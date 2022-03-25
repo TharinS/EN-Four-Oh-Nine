@@ -25,9 +25,12 @@ span {
     font-weight: bold;
 }
 
-.img-settings {
+.logo {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
     height: auto;
-    max-width: 30%;
+    max-width: 25%;
 }
 
 .button {
