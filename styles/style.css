@@ -13,9 +13,26 @@ span {
     padding-right: 20px;
 }
 
+.footer {
+    font-size: small;
+}
+
 .image {
     width: 50%;
     height: 50%;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 35px;
+}
+
+.contact {
+    display: block;
+    float: right;
+    padding-right: 20px;
 }
 
 .table-border {
