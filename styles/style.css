@@ -91,18 +91,6 @@ span {
     background-color: #242424;
 }
 
-
-/*"logo head head head" 
-.grid-item1 {
-    grid-area: logo;
-    background-color: black;
-}
-
-.grid-item2 {
-    grid-area: head;
-    background-color: black;
-} */
-
 .grid-menu-button1 {
     grid-area: button1;
 }
