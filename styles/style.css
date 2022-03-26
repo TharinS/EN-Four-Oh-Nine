@@ -31,17 +31,17 @@ span {
 }
 
 .image {
-    max-width: 50%;
-    height: 50%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80%;
 }
 
 .title {
-    width: 100%;
     text-align: center;
     margin: 0;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 3em;
-    white-space: nowrap;
 }
 
 .table-border {
@@ -87,7 +87,6 @@ span {
 
 .grid-banner {
     grid-area: banner;
-    white-space: nowrap;
     background-color: #242424;
 }
 
