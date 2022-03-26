@@ -91,7 +91,7 @@ span {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "banner banner banner banner" "button1 button2 button3 button4" "content1 content1 content1 content1" "content2 content2 image image" "content3 content3 image image" "footer footer footer footer";
+    grid-template-areas: "banner banner banner banner" "button1 button2 button3 button4" "content1 content1 content1 image" "content2 content2 content2 content2" "content3 content3 content3 content3" "footer footer footer footer";
 }
 
 .grid-banner {
@@ -134,7 +134,6 @@ span {
 .grid-item6 {
     grid-area: image;
     align-content: right;
-    padding-left: 10px;
 }
 
 .grid-item7 {
