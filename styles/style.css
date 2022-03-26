@@ -123,15 +123,18 @@ span {
 .grid-item4 {
     grid-area: content2;
     width: max-content;
+    padding-left: 10px;
 }
 
 .grid-item5 {
     grid-area: content3;
+    padding-left: 10px;
 }
 
 .grid-item6 {
     grid-area: image;
     align-content: right;
+    padding-left: 10px;
 }
 
 .grid-item7 {
