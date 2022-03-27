@@ -59,14 +59,18 @@ body {
 
 .banner-settings {
     margin: auto;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-bottom: 10px;
 }
 
 .title {
     text-align: center;
     margin: 0;
     font-family: "Trebuchet MS", sans-serif !important;
-    font-size: 3em;
-    color: white !important;
+    font-size: 4.5em;
+    color: #FFFF !important;
+    text-shadow: 2px 2px 2px darkblue;
 }
 
 .logo {
@@ -74,9 +78,6 @@ body {
     height: auto;
     clear: left;
     float: left;
-    padding-top: 10px;
-    padding-left: 16px;
-    padding-bottom: 10px;
 }
 
 
@@ -139,10 +140,12 @@ span {
 
 .lava3 {
     background-color: #F5B700;
+    transform: rotate(180deg);
 }
 
 .lava4 {
     background-color: #28965A;
+    transform: rotate(180deg);
 }
 
 .gallery {
@@ -269,7 +272,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-template-areas: "title title";
-    gap: 10px;
+    gap: 5px;
 }
 
 .subgrid-title {
