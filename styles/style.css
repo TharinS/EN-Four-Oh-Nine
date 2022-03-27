@@ -25,6 +25,7 @@ body {
     font-size: 15px;
     clear: right;
     float: right;
+    margin-top: 5px;
 }
 
 .git-button {
@@ -37,6 +38,9 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 15px;
+    clear: left;
+    float: left;
+    margin-top: 5px;
 }
 
 
@@ -75,17 +79,18 @@ span {
     margin-top: auto;
     padding-bottom: 10px;
     color: white !important;
+    border-top: 2px solid lightblue;
 }
 
 .image {
     display: block;
     width: 50%;
-    border: 5px inset #4E2A2A;
+    border: 3px inset lightblue;
     box-shadow: 2px 2px gray;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    background-color: black;
+    background-color: #3A0842;
 }
 
 .title {
@@ -135,6 +140,8 @@ span {
 /* Menu Button Settings Start */
 
 .button {
+    border-top: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
     color: white;
     width: 100%;
     height: 80%;
