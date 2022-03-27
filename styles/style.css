@@ -11,7 +11,7 @@ body {
 }
 
 
-/* Footer Buttons  */
+/* Footer Buttons Start */
 
 .owner-button {
     border: 2px solid rgb(209, 47, 47);
@@ -40,11 +40,12 @@ body {
 }
 
 
-/* Footer Buttons */
+/* Footer Buttons End */
 
 .fieldset-settings {
     border-radius: 10px;
-    box-shadow: 2px 2px lightgrey;
+    box-shadow: 2px 2px lightblue;
+    background-color: white;
 }
 
 .banner-settings {
@@ -64,6 +65,10 @@ span {
     padding-right: 20px;
 }
 
+.caption {
+    text-align: center;
+}
+
 .footer {
     font-size: small;
     background-color: #0B132B;
@@ -74,9 +79,13 @@ span {
 
 .image {
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 80%;
+    width: 50%;
+    border: 5px inset #4E2A2A;
+    box-shadow: 2px 2px gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    background-color: black;
 }
 
 .title {
@@ -87,6 +96,9 @@ span {
     color: white !important;
 }
 
+
+/* Table Start */
+
 .table-border {
     border: 2px solid black;
     border-collapse: collapse;
@@ -94,6 +106,21 @@ span {
     font-weight: bold;
     background-color: white;
 }
+
+.color-r {
+    background-color: lightcoral;
+}
+
+.color-g {
+    background-color: lightgreen;
+}
+
+.color-b {
+    background-color: lightblue;
+}
+
+
+/* Table End */
 
 .logo {
     max-width: 5%;
@@ -105,7 +132,7 @@ span {
 }
 
 
-/* Menu Button Settings */
+/* Menu Button Settings Start */
 
 .button {
     color: white;
@@ -123,7 +150,7 @@ span {
 }
 
 
-/* Menu Button Settings */
+/* Menu Button Settings End */
 
 
 /* CSS Grid Start */
@@ -132,7 +159,7 @@ span {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "banner banner banner banner" "button1 button2 button3 button4" "content1 content1 content1 image" "content2 content2 content2 content2" "content3 content3 content3 content3" "footer footer footer footer";
+    grid-template-areas: "banner banner banner banner" "button1 button2 button3 button4" "content1 content1 content1 content1" "content2 content2 image image" "content3 content3 image image" "footer footer footer footer";
 }
 
 .grid-banner {
@@ -162,13 +189,13 @@ span {
 }
 
 .grid-item4 {
-    grid-area: content2;
-    width: max-content;
+    grid-area: content3;
     padding-left: 10px;
 }
 
 .grid-item5 {
-    grid-area: content3;
+    grid-area: content2;
+    width: max-content;
     padding-left: 10px;
 }
 
