@@ -13,20 +13,26 @@
 </head>
 
 <body>
-    <main class="grid-container">
-        <h1 class="grid-banner banner-settings title font-general"><img class="logo" src="../styles/Images/APNGLogoNoBackground.png" alt="logo">Animated Portable Network Graphics</h1>
-        <a class="grid-menu-button1 button" href="index.html">Index</a>
-        <a class="grid-menu-button2 button" href="topic.html">Topic</a>
-        <a class="grid-menu-button3 button" href="quiz.html">Quiz</a>
-        <a class="grid-menu-button4 button" href="enhancements.html">Enhancement</a>
-
-        <section class="grid-item3">
+    <main>
+        <nav class="solid-background">
+            <a class="grid-menu-button1 button" href="index.html">Index</a>
+            <a class="grid-menu-button2 button" href="topic.html">Topic</a>
+            <a class="grid-menu-button3 button" href="quiz.html">Quiz</a>
+            <a class="grid-menu-button4 button" href="enhancements.html">Enhancement</a>
+            <a class="mobile-button button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </a>
+        </nav>
+        <br><br><br><br>
+        <section class="grid-item3 section-settings">
             <fieldset class="fieldset-settings">
-                <h2 class="font-general">A Brief History on Animated Portable Network Graphics(APNG) - </h2>
-                <p class="font-general">Created in 2004 by <a href="https://www.linkedin.com/in/stuartparmenter" class="author"><em>Stuart Parmenter</em></a> and <a href="https://www.linkedin.com/in/vukicevic" class="author"><em>Vladimir Vukićević</em></a> of the <a href="https://en.wikipedia.org/wiki/Mozilla_Corporation"
-                        class="author"><em>Mozilla Coropration</em></a> to store animations needed for interfaces like throbbers(A kind of animation also known as loading icones). the Animated Portable Network Graphics(APNG) is a file format which extends
-                    on the PNG file format to play a series of png images. The APNG file format supports 24 bit color as well as 8 bit transparency. The APNG file format as of now is still not as popular as GIF's as alot of web browsers and programs do
-                    not support as well as the files being larger then GIF files which is a major downside as the files will hog the users bandwidth. <br>Some similar file formats include
+                <h2 class="font-general headings">A Brief History on Animated Portable Network Graphics(APNG) - </h2>
+                <p class="font-general paragraph">Created in 2004 by <a href="https://www.linkedin.com/in/stuartparmenter" class="author"><em class="author">Stuart Parmenter</em></a> and <a href="https://www.linkedin.com/in/vukicevic" class="author"><em class="author">Vladimir Vukićević</em></a>                    of the <a href="https://en.wikipedia.org/wiki/Mozilla_Corporation" class="author"><em class="author">Mozilla Coropration</em></a> to store animations needed for interfaces like throbbers(A kind of animation also known as loading icones).
+                    the Animated Portable Network Graphics(APNG) is a file format which extends on the PNG file format to play a series of png images. The APNG file format supports 24 bit color as well as 8 bit transparency. The APNG file format as of
+                    now is still not as popular as GIF's as alot of web browsers and programs do not support, in which case the browsers would display the first frame, as well as the files being larger then GIF files which is a major downside as the files
+                    will hog the users bandwidth. <br>Some similar file formats include :-
                     <ul>
                         <li class="font-general">GIF - one of the oldest file formats, it supports 8 bit color and lacks alpha transparency, dispite this it is one of the most popular animated image file formats.</li>
                         <li class="font-general">WebP - Created very recently in 2010, it boasts features similar to APNG supporting 24 bit color and 8 bit transparency and also features lossy and lossless compression allowing it to have very small file sizes while retaining
@@ -36,30 +42,32 @@
             </fieldset>
 
         </section>
+        <br><br>
         <section class="grid-item4">
             <fieldset class="fieldset-settings">
-                <h2 class="font-general">APNG File Format - </h2>
-                <table class="table-border">
+                <h2 class="font-general headings">APNG File Format - </h2>
+                <p class="paragraph font-general">APNG files are stored in a binary format. It follows PNG specifications which seperate data into segments called chunks, and also introduces new chunks. :- </p>
+                <table class="table-border table-general">
                     <tr>
-                        <td class="table-border font-general">PNG Signature</td>
-                        <td class="table-border font-general">IHDR (PNG Header)</td>
-                        <td class="table-border font-general">acTL</td>
+                        <td class="table-border font-general table-fx">PNG Signature</td>
+                        <td class="table-border font-general table-fx">IHDR (PNG Header)</td>
+                        <td class="table-border font-general table-fx">acTL</td>
                         <td class="table-border font-general color-r">fcTL</td>
                         <td class="table-border font-general color-r">IDAT (First PNG Image)</td>
                         <td class="table-border font-general color-g">fcTL</td>
                         <td class="table-border font-general color-g">fdAT</td>
                         <td class="table-border font-general color-b">fcTL</td>
                         <td class="table-border font-general color-b">fdAT</td>
-                        <td class="table-border font-general">IEND (End Block)</td>
+                        <td class="table-border font-general table-fx">IEND (End Block)</td>
                     </tr>
                     <tr>
-                        <td class="table-border font-general"></td>
-                        <td class="table-border font-general"></td>
-                        <td class="table-border font-general"></td>
+                        <td class="table-border font-general table-fx"></td>
+                        <td class="table-border font-general table-fx"></td>
+                        <td class="table-border font-general table-fx"></td>
                         <td class="table-border font-general color-r" colspan="2">Frame 1</td>
                         <td class="table-border font-general color-g" colspan="2">Frame 2</td>
                         <td class="table-border font-general color-b" colspan="2">Frame 3</td>
-                        <td class="table-border font-general"></td>
+                        <td class="table-border font-general table-fx"></td>
                     </tr>
                 </table>
                 <figcaption>
@@ -74,32 +82,71 @@
                 </ul>
             </fieldset>
         </section>
+        <br><br>
         <section class="grid-item5">
             <fieldset class="fieldset-settings">
-                <h2 class="font-general">Main Points about APNG - </h2>
-                <ol>
-                    <li class="font-general">Published - 2004</li>
-                    <li class="font-general">Color Depth - 24 Bit</li>
-                    <li class="font-general">Frame Rate - Unlimited</li>
-                    <li class="font-general">Transparency - 8 Bit</li>
-                </ol>
+                <h2 class="font-general headings">Which browsers support APNGs - </h2>
+                <p class="paragraph font-general">The following table shows the support for APNGs in the most popular browsers for both desktop and mobile devices.</p>
+                <h3 class="font-general">Desktop - </h3>
+                <table class="table-border table-general">
+                    <tr>
+                        <td class="table-border font-general table-fx">Browser(s)</td>
+                        <td class="table-border font-general color-r">Chrome</td>
+                        <td class="table-border font-general color-r">FireFox</td>
+                        <td class="table-border font-general color-r">Edge</td>
+                        <td class="table-border font-general color-r">Opera</td>
+                        <td class="table-border font-general color-r">Safari</td>
+                    </tr>
+                    <tr>
+                        <td class="table-border font-general table-fx">Version</td>
+                        <td class="table-border font-general color-g">Version 100</td>
+                        <td class="table-border font-general color-g">Version 98</td>
+                        <td class="table-border font-general color-g">Version 99</td>
+                        <td class="table-border font-general color-g">Version 83</td>
+                        <td class="table-border font-general color-g">Version 15.4</td>
+                    </tr>
+                    <tr>
+                        <td class="table-border font-general table-fx">Release Date</td>
+                        <td class="table-border font-general color-b">March 29th, 2022</td>
+                        <td class="table-border font-general color-b">March 8th, 2022</td>
+                        <td class="table-border font-general color-b">March 3rd, 2022</td>
+                        <td class="table-border font-general color-b">January 19th, 2022</td>
+                        <td class="table-border font-general color-b">March 14th, 2022</td>
+                    </tr>
+                </table>
+                <br>
+                <h3 class="font-general">Mobile - </h3>
+                <table class="table-border table-general">
+                    <tr>
+                        <td class="table-border font-general table-fx">Browser(s)</td>
+                        <td class="table-border font-general color-r">Chrome for Android</td>
+                        <td class="table-border font-general color-r">FireFox for Android</td>
+                        <td class="table-border font-general color-r">Android Web Browser</td>
+                        <td class="table-border font-general color-r">Opera Mobile</td>
+                        <td class="table-border font-general color-r">Safari IOS</td>
+                    </tr>
+                    <tr>
+                        <td class="table-border font-general table-fx">Version</td>
+                        <td class="table-border font-general color-g">Version 99</td>
+                        <td class="table-border font-general color-g">Version 96</td>
+                        <td class="table-border font-general color-g">Version 99</td>
+                        <td class="table-border font-general color-g">Version 64</td>
+                        <td class="table-border font-general color-g">Version 15.4</td>
+                    </tr>
+                    <tr>
+                        <td class="table-border font-general table-fx">Release Date</td>
+                        <td class="table-border font-general color-b">January 11th, 2022</td>
+                        <td class="table-border font-general color-b">March 8th, 2022</td>
+                        <td class="table-border font-general color-b">March 1st, 2022</td>
+                        <td class="table-border font-general color-b">Febuary 16th, 2022</td>
+                        <td class="table-border font-general color-b">March 14th, 2022</td>
+                    </tr>
+                </table>
             </fieldset>
 
         </section>
-        <section class="grid-item6">
-            <fieldset class="fieldset-settings gallery">
-                <figure class="subgrid-container">
-                    <h2 class="subgrid-title font-general">-- APNG Gallery --</h2>
-                    <img class="image lava1" src="../styles/Images/blue.png" alt="Lava lamp animation">
-                    <img class="image lava2" src="../styles/Images/blue.png" alt="Lava lamp animation">
-                    <img class="image lava3" src="../styles/Images/blue.png" alt="Lava lamp animation">
-                    <img class="image lava4" src="../styles/Images/blue.png" alt="Lava lamp animation">
-
-
-                </figure>
-            </fieldset>
-        </section>
-        <footer class="grid-item7 footer"><a class="git-button" href="https://github.com/TharinS/EN-Four-Oh-Nine">Github</a><a class="owner-button" href="mailto:103166002@student.swin.edu.au">Contact Owner</a></footer>
+        <br><br><br><br>
+        <footer class="grid-item7 footer center font-general"><a class="git-button" href="https://github.com/TharinS/EN-Four-Oh-Nine">Github</a>-- Animated Portable Network Graphics --<a class="owner-button" href="mailto:103166002@student.swin.edu.au">Contact Owner</a></footer>
     </main>
 </body>
 
