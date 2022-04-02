@@ -1,45 +1,19 @@
 /* Topic Page */
 
 * {
-    background-color: rgba(0, 0, 0, .65) !important;
+    /* background-color: rgba(0, 0, 0, .65) !important; */
     color: white !important;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: url("../styles/Images/background.png");
+    background-image: url("../styles/Images/back.png");
     background-color: black;
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
 }
-
-
-/* Scroll Bar */
-
-::-webkit-scrollbar {
-    /* width */
-    width: 10px;
-}
-
- ::-webkit-scrollbar-track {
-    /* Track */
-    background: #f1f1f1;
-}
-
- ::-webkit-scrollbar-thumb {
-    /* Handle */
-    background: #888;
-}
-
- ::-webkit-scrollbar-thumb:hover {
-    /* Handle on hover */
-    background: #555;
-}
-
-
-/* Scroll Bar */
 
 
 /* General Classes Start */
@@ -146,7 +120,8 @@ body {
 
 .headings {
     text-align: center;
-    padding: 50px;
+    padding: 30px;
+    font-size: 3em;
 }
 
 .paragraph {
@@ -202,12 +177,6 @@ span {
     background-color: #28965A !important;
     transform: rotate(180deg);
 }
-
-
-/* .gallery {
-    clear: right;
-    float: right;
-} */
 
 
 /* Image Gallery End */
