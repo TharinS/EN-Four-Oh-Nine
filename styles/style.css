@@ -53,11 +53,6 @@ input[type=reset] {
     font-size: 1em;
 }
 
-input[type=reset] {
-    clear: right;
-    float: right;
-}
-
 input[type=submit]:hover,
 input[type=reset]:hover {
     background-color: goldenrod;
