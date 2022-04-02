@@ -11,6 +11,7 @@
     <link rel="import" href="'https://fonts.googleapis.com/css?family=Rubik:700&display=swap'">
     <title>Animated Portable Network Graphics</title>
 </head>
+
 <body>
     <main>
         <nav class="solid-background">
@@ -26,80 +27,84 @@
         </nav>
         <br><br><br><br>
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-        <section class="grid-item3 section-settings">
-            <h2 class="font-general headings">A quiz on the history of Animated Portable Network Graphics</h2>
-            <fieldset class="fieldset-settings">
-                <legend class="font-general"><h3>Student details</h3></legend>
-                <p class="font-general paragraph">
-                    <label for="first_name">First Name:</label> 
-                    <input type="text" name= "first_name" id="first_name" maxlength="30" pattern="^[a-zA-Z]+$" required="required"/>
-                </p>
-                <p class="font-general paragraph">              
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" name= "last_name" id="last_name" maxlength="30" pattern="^[a-zA-Z]+$" required="required"/>
-                </p>
-                <p class="font-general paragraph">
-                    <label for="student_ID">Student ID:</label>
-                    <input type="text" name= "student_ID" id="student_ID" minlength="7" maxlength="10" pattern="^[0-9]+" required="required"/>
-                </p>
-            </fieldset>
-        </section>
-        <section class="grid-item4">
-            <fieldset class="fieldset-settings">
-                <legend class="font-general"><h3>Five questions about Animated Portable Network Graphics</h3></legend>
-                <p class="font-general paragraph">
-                    <label for="creation">Why were Animated Portable Network Graphics initially created?</label>
-                </p>
-                <p class="font-general paragraph">
-                    <textarea id="creation" name="creation" rows="4" cols="40" placeholder="Write your answer here..."></textarea>
-                </p>
-                <p class="font-general paragraph">When were Animated Portable Network Graphics created?</p>
-                <p class="font-general paragraph">
-                    <label for="1997">1997</label> 
-                        <input type="radio" id="1997" name="year" value="1997"/>
-                    <label for="2001">2001</label> 
-                        <input type="radio" id="2001" name="year" value="2001"/>
-                    <label for="2004">2004</label> 
-                        <input type="radio" id="2004" name="year" value="2004" required="required"/>
-                    <label for="2007">2007</label> 
-                        <input type="radio" id="2007" name="year" value="2007"/>
-                </p>
-                <p class="font-general paragraph">What type of chunks are Animated Portable Network Graphics separated into?</p>
-                <p class="font-general paragraph">
-                        <input type="checkbox" id="fdAT" name="category[]" value="fdAT" required="required"/>
-                    <label for="fdAT">Frame Data Chunk</label> <br>
-                        <input type="checkbox" id="acTL" name="category[]" value="acTL"/>
-                    <label for="acTL">Animation Control Chunk</label><br>
-                        <input type="checkbox" id="fake_chunk" name="category[]" value="fake_chunk"/>
-                    <label for="fake_chunk">Frame Inspector Chunk</label><br>
+            <section class="grid-item3 section-settings">
+                <h2 class="font-general headings">A quiz on the history of Animated Portable Network Graphics</h2>
+                <fieldset class="fieldset-settings">
+                    <legend class="font-general">
+                        <h3>Student details</h3>
+                    </legend>
+                    <p class="font-general paragraph">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" id="first_name" maxlength="30" pattern="^[a-zA-Z]+$" required="required" />
+                    </p>
+                    <p class="font-general paragraph">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" maxlength="30" pattern="^[a-zA-Z]+$" required="required" />
+                    </p>
+                    <p class="font-general paragraph">
+                        <label for="student_ID">Student ID:</label>
+                        <input type="text" name="student_ID" id="student_ID" minlength="7" maxlength="10" pattern="^[0-9]+" required="required" />
+                    </p>
+                </fieldset>
+            </section>
+            <section class="grid-item4">
+                <fieldset class="fieldset-settings">
+                    <legend class="font-general">
+                        <h3>Five questions about Animated Portable Network Graphics</h3>
+                    </legend>
+                    <p class="font-general paragraph">
+                        <label for="creation">Why were Animated Portable Network Graphics initially created?</label>
+                    </p>
+                    <p class="font-general paragraph">
+                        <textarea id="creation" name="creation" rows="4" cols="40" placeholder="Write your answer here..."></textarea>
+                    </p>
+                    <p class="font-general paragraph">When were Animated Portable Network Graphics created?</p>
+                    <p class="font-general paragraph">
+                        <label for="1997">1997</label>
+                        <input type="radio" id="1997" name="year" value="1997" />
+                        <label for="2001">2001</label>
+                        <input type="radio" id="2001" name="year" value="2001" />
+                        <label for="2004">2004</label>
+                        <input type="radio" id="2004" name="year" value="2004" required="required" />
+                        <label for="2007">2007</label>
+                        <input type="radio" id="2007" name="year" value="2007" />
+                    </p>
+                    <p class="font-general paragraph">What type of chunks are Animated Portable Network Graphics separated into?</p>
+                    <p class="font-general paragraph">
+                        <input type="checkbox" id="fdAT" name="category[]" value="fdAT" required="required" />
+                        <label for="fdAT">Frame Data Chunk</label> <br>
+                        <input type="checkbox" id="acTL" name="category[]" value="acTL" />
+                        <label for="acTL">Animation Control Chunk</label><br>
+                        <input type="checkbox" id="fake_chunk" name="category[]" value="fake_chunk" />
+                        <label for="fake_chunk">Frame Inspector Chunk</label><br>
                         <input type="checkbox" id="fcTL" name="category[]" value="fcTL" />
-                    <label for="fcTL">Frame Control Chunk</label><br>
-                </p>
-                <p class="font-general paragraph">
-                    <label for="corporation">Which corporation were the creators of Animated Portable Network Graphics from?</label>
-                </p>
-                <p class="font-general paragraph">
-                    <select name="corporation" id="corporation" required="required">
+                        <label for="fcTL">Frame Control Chunk</label><br>
+                    </p>
+                    <p class="font-general paragraph">
+                        <label for="corporation">Which corporation were the creators of Animated Portable Network Graphics from?</label>
+                    </p>
+                    <p class="font-general paragraph">
+                        <select name="corporation" id="corporation" required="required">
                         <option value="">Please Select</option>
                         <option value="microsoft">Microsoft</option>           
                         <option value="google">Google</option>
                         <option value="mozilla">Mozilla</option>
                         <option value="apple">Apple</option>
                     </select>
-                </p>
-                <p class="font-general paragraph">
-                    <label for="color_bit">The APNG file format supports</label>
-                        <input type="number" id="color_bit" name="color_bit" min="1" max="32">
-                     bit color as well as 8 bit transparency.
-                </p>
-            </fieldset>
-        </section>
-        <br>
-            <input type= "submit" value="Submit"/>
-            <input type= "reset" value="Reset Form"/>
+                    </p>
+                    <p class="font-general paragraph">
+                        <label for="color_bit">The APNG file format supports</label>
+                        <input type="number" id="color_bit" name="color_bit" min="1" max="32"> bit color as well as 8 bit transparency.
+                    </p>
+                </fieldset>
+            </section>
+            <br>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset Form" />
         </form>
         <br><br><br><br>
         <footer class="grid-item7 footer center font-general"><a class="git-button" href="https://github.com/TharinS/EN-Four-Oh-Nine">Github</a>-- Animated Portable Network Graphics --<a class="owner-button" href="mailto:102578295@student.swin.edu.au">Contact Owner</a></footer>
     </main>
 </body>
+
 </html>
