@@ -18,8 +18,6 @@ body {
 .form-button {
     white-space: nowrap;
     display: inline-block;
-    align-items: center;
-    justify-content: center;
 }
 
 .fill-in-blank {
@@ -56,7 +54,6 @@ input[type=reset] {
 }
 
 input[type=reset] {
-    display: flex;
     clear: right;
     float: right;
 }
@@ -208,7 +205,7 @@ input[type=reset]:hover {
 
 .font-general {
     color: white !important;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
 }
 
@@ -319,6 +316,10 @@ span {
 
 /* Menu Button Settings Start */
 
+.banner-background {
+    background-color: #0e0e0e !important;
+}
+
 .button {
     width: max-content;
     height: max-content;
@@ -352,3 +353,32 @@ span {
 
 
 /* Menu Button Settings End */
+
+
+/* Grid (Table) */
+
+.grid-table-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "Title1 Title2" "Table1 Table2";
+    column-gap: 50px;
+}
+
+.grid-table-item1 {
+    grid-area: Title1;
+}
+
+.grid-table-item2 {
+    grid-area: Title2;
+}
+
+.grid-table-item3 {
+    grid-area: Table1;
+}
+
+.grid-table-item4 {
+    grid-area: Table2;
+}
+
+
+/* Grid */
