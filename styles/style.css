@@ -17,12 +17,18 @@ body {
 
 /* General Classes Start */
 
-.solid-background {
-    background-color: black !important;
+.banner-background {
+    background-color: #0e0e0e !important;
 }
 
 .center {
     text-align: center;
+}
+
+.stay-at-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -64,9 +70,7 @@ body {
 
 .footer {
     font-size: small;
-    background-color: black !important;
     margin-top: auto;
-    padding-bottom: 10px;
     color: white !important;
     height: 2.5em;
 }
@@ -257,94 +261,6 @@ span {
 
 
 /* Menu Button Settings End */
-
-
-/* CSS Grid Start */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: "banner banner banner banner" "content1 content1 content1 content1" "content2 content2 content2 content2" "content3 content3 content3 content3" "image image image image" "footer footer footer footer";
-}
-
-.grid-banner {
-    grid-area: banner;
-    display: grid;
-    justify-content: left;
-    align-content: left;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "button1 button2 button3 button4";
-}
-
-
-/*
-.grid-title {
-    grid-area: title;
-} */
-
-.grid-menu-button1 {
-    grid-area: button1;
-}
-
-.grid-menu-button2 {
-    grid-area: button2;
-}
-
-.grid-menu-button3 {
-    grid-area: button3;
-}
-
-.grid-menu-button4 {
-    grid-area: button4;
-}
-
-.grid-item3 {
-    grid-area: content1;
-    padding: 2px;
-}
-
-.grid-item4 {
-    grid-area: content3;
-    padding: 2px;
-}
-
-.grid-item5 {
-    grid-area: content2;
-    padding: 2px;
-}
-
-.grid-item6 {
-    grid-area: image;
-    padding: 2px;
-}
-
-.grid-item7 {
-    grid-area: footer;
-}
-
-
-/* CSS Grid End */
-
-
-/* Sub-Grid Start */
-
-.subgrid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    grid-template-areas: "title title";
-    gap: 5px;
-}
-
-.subgrid-title {
-    grid-area: title;
-    text-align: center;
-}
-
-
-/* Sub-Grid End */
 
 
 /* Topic Page End*/
