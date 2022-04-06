@@ -525,6 +525,121 @@ th {
         display: none;
     }
     /* Navbar */
+    .mobile-padding {
+        margin-top: 90px;
+    }
+    /* Special Letters - Intro Page */
+    .special-letter-container-top,
+    .special-letter-container-bottom {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 25px;
+    }
+    .special-letter-container-top span {
+        display: inline-block;
+        transform-origin: bottom center;
+        font: 26px Monaco, MonoSpace !important;
+    }
+    .special-letter-container-bottom span {
+        display: inline-block;
+        transform-origin: top center;
+        font: 26px Monaco, MonoSpace !important;
+    }
+    /* Index page curved letter art using transform reference - https://www.geeksforgeeks.org/how-to-create-a-curve-text-using-css3-canvas/ */
+    .Letter1 {
+        transform: translate(78px, 222px) rotate(-90deg);
+    }
+    .Letter2 {
+        transform: translate(44px, 181px) rotate(-81deg);
+    }
+    .Letter3 {
+        transform: translate(20px, 135px) rotate(-70deg);
+    }
+    .Letter4 {
+        transform: translate(9px, 96px) rotate(-52deg);
+    }
+    .Letter5 {
+        transform: translate(2px, 64px) rotate(-40deg);
+    }
+    .Letter6 {
+        transform: translate(0px, 43px) rotate(-24deg);
+    }
+    .Letter7 {
+        transform: translate(0px, 27px) rotate(-17deg);
+    }
+    .Letter8 {
+        transform: translate(0px, 22px) rotate(-4deg);
+    }
+    .Letter9 {
+        transform: translate(26px, 24px) rotate(1deg);
+    }
+    .Letter10 {
+        transform: translate(20px, 37px) rotate(17deg);
+    }
+    .Letter11 {
+        transform: translate(25px, 59px) rotate(24deg);
+    }
+    .Letter12 {
+        transform: translate(17px, 92px) rotate(40deg);
+    }
+    .Letter13 {
+        transform: translate(6px, 130px) rotate(52deg);
+    }
+    .Letter14 {
+        transform: translate(-18px, 170px) rotate(70deg);
+    }
+    .Letter15 {
+        transform: translate(-48px, 211px) rotate(81deg);
+    }
+    .Letter16 {
+        transform: translate(-89px, 245px) rotate(90deg);
+    }
+    .Letter17 {
+        transform: translate(85px, -140px) rotate(60deg);
+    }
+    .Letter18 {
+        transform: translate(63px, -109px) rotate(52deg);
+    }
+    .Letter19 {
+        transform: translate(44px, -81px) rotate(48deg);
+    }
+    .Letter20 {
+        transform: translate(31px, -60px) rotate(37deg);
+    }
+    .Letter21 {
+        transform: translate(16px, -47px) rotate(24deg);
+    }
+    .Letter22 {
+        transform: translate(8px, -32px) rotate(19deg);
+    }
+    .Letter23 {
+        transform: translate(0px, -24px) rotate(9deg);
+    }
+    .Letter24 {
+        transform: translate(0px, -22px) rotate(0deg);
+    }
+    .Letter25 {
+        transform: translate(0px, -25px) rotate(-7deg);
+    }
+    .Letter26 {
+        transform: translate(-8px, -36px) rotate(-22deg);
+    }
+    .Letter27 {
+        transform: translate(-16px, -52px) rotate(-32deg);
+    }
+    .Letter28 {
+        transform: translate(-29px, -70px) rotate(-38deg);
+    }
+    .Letter29 {
+        transform: translate(-43px, -94px) rotate(-44deg);
+    }
+    .Letter30 {
+        transform: translate(-61px, -122px) rotate(-49deg);
+    }
+    .Letter31 {
+        transform: translate(-86px, -150px) rotate(-57deg);
+    }
+    /* Special Letters - Intro Page */
 }
 
 @media screen and (max-width: 600px) {
@@ -533,7 +648,6 @@ th {
     .headings {
         font-size: 1.5em !important;
         padding: 0;
-        text-align: left;
     }
     .font-general {
         font-size: 1em;
@@ -552,8 +666,11 @@ th {
     /* Form */
     /* Table Grid */
     .grid-table-container {
-        display: block;
-        /* grid-template-areas: "Title1 Title1" "Table1 Table1" "Title2 Title2" "Table2 Table2"; */
+        display: grid;
+        grid-template-areas: "Title1 Title1" "Table1 Table1" "Title2 Title2" "Table2 Table2";
+        overflow: hidden;
+        overflow-x: auto;
+        border: none;
     }
     /* Table Grid */
     /* Navbar */
@@ -593,9 +710,9 @@ th {
     /* Table */
     /* horizontal scrollbar for tables if mobile screen */
     .table-mobile {
-        overflow-x: auto;
-        display: block;
-        border: none;
+        overflow-x: auto !important;
+        display: block !important;
+        border: none !important;
     }
     /* Table */
     /* Topic Page */
@@ -603,6 +720,137 @@ th {
         width: 90%;
     }
     /* Topic Page */
+    /* Index Page */
+    .mobile-index-title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .logo {
+        max-width: 46%;
+    }
+    .mobile-padding {
+        margin-top: 50px;
+    }
+    /* Index Page */
+    /* Special Letters - Intro Page */
+    .special-letter-container-top,
+    .special-letter-container-bottom {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .special-letter-container-top span {
+        display: inline-block;
+        transform-origin: bottom center;
+        font: 18px Monaco, MonoSpace !important;
+    }
+    .special-letter-container-bottom span {
+        display: inline-block;
+        transform-origin: top center;
+        font: 18px Monaco, MonoSpace !important;
+    }
+    .circle {
+        position: fixed;
+        background-color: white;
+        width: 90vw;
+        height: 90vw;
+        border-radius: 50%;
+        left: 6%;
+    }
+    /* Index page curved letter art using transform reference - https://www.geeksforgeeks.org/how-to-create-a-curve-text-using-css3-canvas/ */
+    .Letter1 {
+        transform: translate(0px, 222px) rotate(-90deg);
+    }
+    .Letter2 {
+        transform: translate(2px, 181px) rotate(-81deg);
+    }
+    .Letter3 {
+        transform: translate(20px, 135px) rotate(-70deg);
+    }
+    .Letter4 {
+        transform: translate(9px, 96px) rotate(-52deg);
+    }
+    .Letter5 {
+        transform: translate(2px, 64px) rotate(-40deg);
+    }
+    .Letter6 {
+        transform: translate(0px, 43px) rotate(-24deg);
+    }
+    .Letter7 {
+        transform: translate(0px, 27px) rotate(-17deg);
+    }
+    .Letter8 {
+        transform: translate(0px, 22px) rotate(-4deg);
+    }
+    .Letter9 {
+        transform: translate(26px, 24px) rotate(1deg);
+    }
+    .Letter10 {
+        transform: translate(20px, 37px) rotate(17deg);
+    }
+    .Letter11 {
+        transform: translate(25px, 59px) rotate(24deg);
+    }
+    .Letter12 {
+        transform: translate(17px, 92px) rotate(40deg);
+    }
+    .Letter13 {
+        transform: translate(6px, 130px) rotate(52deg);
+    }
+    .Letter14 {
+        transform: translate(-18px, 170px) rotate(70deg);
+    }
+    .Letter15 {
+        transform: translate(-48px, 211px) rotate(81deg);
+    }
+    .Letter16 {
+        transform: translate(-89px, 245px) rotate(90deg);
+    }
+    .Letter17 {
+        transform: translate(85px, -140px) rotate(60deg);
+    }
+    .Letter18 {
+        transform: translate(63px, -109px) rotate(52deg);
+    }
+    .Letter19 {
+        transform: translate(44px, -81px) rotate(48deg);
+    }
+    .Letter20 {
+        transform: translate(31px, -60px) rotate(37deg);
+    }
+    .Letter21 {
+        transform: translate(16px, -47px) rotate(24deg);
+    }
+    .Letter22 {
+        transform: translate(8px, -32px) rotate(19deg);
+    }
+    .Letter23 {
+        transform: translate(0px, -24px) rotate(9deg);
+    }
+    .Letter24 {
+        transform: translate(0px, -22px) rotate(0deg);
+    }
+    .Letter25 {
+        transform: translate(0px, -25px) rotate(-7deg);
+    }
+    .Letter26 {
+        transform: translate(-8px, -36px) rotate(-22deg);
+    }
+    .Letter27 {
+        transform: translate(-16px, -52px) rotate(-32deg);
+    }
+    .Letter28 {
+        transform: translate(-29px, -70px) rotate(-38deg);
+    }
+    .Letter29 {
+        transform: translate(-43px, -94px) rotate(-44deg);
+    }
+    .Letter30 {
+        transform: translate(-61px, -122px) rotate(-49deg);
+    }
+    .Letter31 {
+        transform: translate(-86px, -150px) rotate(-57deg);
+    }
+    /* Special Letters - Intro Page */
 }
 
 
