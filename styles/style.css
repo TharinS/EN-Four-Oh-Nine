@@ -43,7 +43,6 @@ select {
 
 input[type=submit],
 input[type=reset] {
-    width: 100%;
     background-color: #1b1b1b;
     color: white;
     padding: 14px 20px;
@@ -84,8 +83,10 @@ input[type=reset]:hover {
 
 /* Footer Buttons Start */
 
-.owner-button {
+.owner-button,
+.git-button {
     border: 1px solid #ffc403;
+    border-radius: 10px;
     background-color: black !important;
     width: fit-content;
     text-align: center;
@@ -99,20 +100,14 @@ input[type=reset]:hover {
     font-weight: 600;
 }
 
+.owner-button {
+    clear: right;
+    float: right;
+}
+
 .git-button {
-    border: 1px solid #ffc403;
-    background-color: black !important;
-    width: fit-content;
-    height: 55%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px !important;
     clear: left;
     float: left;
-    margin-top: 5px;
-    padding: 2px 15px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
 }
 
 .footer {
@@ -145,10 +140,50 @@ input[type=reset]:hover {
     border-top: 10px solid transparent;
     border-left: 20px solid red;
     border-bottom: 10px solid transparent;
+    animation: Youtube-Button 3s linear forwards infinite;
 }
 
 .youtube-button:hover {
     background-color: #0e0e0e;
+}
+
+
+/* Animation for the middle triangle in the youtube icon will pulse red and black to give a heart pulse effect */
+
+@keyframes Youtube-Button {
+    0% {
+        border-left-color: red;
+    }
+    10% {
+        border-left-color: #8b0000;
+    }
+    20% {
+        border-left-color: #610000;
+    }
+    30% {
+        border-left-color: #3a0000;
+    }
+    40% {
+        border-left-color: #1d0000;
+    }
+    50% {
+        border-left-color: black;
+    }
+    60% {
+        border-left-color: #1d0000;
+    }
+    70% {
+        border-left-color: #3a0000;
+    }
+    80% {
+        border-left-color: #610000;
+    }
+    90% {
+        border-left-color: #8b0000;
+    }
+    100% {
+        border-left-color: red;
+    }
 }
 
 
@@ -181,6 +216,50 @@ input[type=reset]:hover {
     margin-right: auto;
 }
 
+.Moz {
+    background-color: greenyellow;
+    animation: LightSwitch 5s linear forwards infinite;
+}
+
+
+/* Key frames for the animation LigthSwitch that mickics a on and off effect with a green and white background */
+
+@keyframes LightSwitch {
+    0% {
+        background-color: #75ff5d;
+    }
+    10% {
+        background-color: white;
+    }
+    20% {
+        background-color: white;
+    }
+    30% {
+        background-color: #39FF14;
+    }
+    40% {
+        background-color: #39FF14;
+    }
+    50% {
+        background-color: white;
+    }
+    60% {
+        background-color: #39FF14;
+    }
+    70% {
+        background-color: white;
+    }
+    80% {
+        background-color: #39FF14;
+    }
+    90% {
+        background-color: white;
+    }
+    100% {
+        background-color: #75ff5d;
+    }
+}
+
 
 /* Banner End */
 
@@ -201,13 +280,11 @@ input[type=reset]:hover {
 .font-general {
     color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
 }
 
 .headings {
     text-align: center;
     padding: 30px;
-    font-size: 3em;
 }
 
 .paragraph {
@@ -233,45 +310,19 @@ span {
 }
 
 
-/* Image Gallery Start */
-
-.image {
-    display: block;
-    width: 85%;
-    border: 3px inset black;
-    box-shadow: 2px 2px lightblue;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    background-color: #293241;
-}
-
-.lava1 {
-    background-color: #6D9DC5 !important;
-}
-
-.lava2 {
-    background-color: #340068 !important;
-}
-
-.lava3 {
-    background-color: #F5B700 !important;
-    transform: rotate(180deg);
-}
-
-.lava4 {
-    background-color: #28965A !important;
-    transform: rotate(180deg);
-}
-
-
-/* Image Gallery End */
-
-
 /* Table Start */
 
 .table-general {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+td,
+th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 
 .table-fx {
@@ -311,32 +362,39 @@ span {
 
 /* Menu Button Settings Start */
 
+.navbar {
+    position: fixed;
+}
+
+.navbar-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+}
+
+.navbar-item {
+    width: max-content;
+}
+
 .banner-background {
     background-color: #0e0e0e !important;
 }
 
 .button {
     width: max-content;
-    height: max-content;
-    padding: 20px 40px;
+    padding: 25px 45px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px !important;
 }
 
-.button:hover {
-    /* width: 96%; */
-    background-color: goldenrod !important;
-}
-
-.mobile-button {
-    clear: right;
-    float: right;
-    justify-content: center;
-    align-content: center;
-    display: none;
-    padding: 12px 48px !important;
+.active {
+    background-color: goldenrod;
+    color: black !important;
 }
 
 .bar {
@@ -355,8 +413,6 @@ span {
 .grid-table-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "Title1 Title2" "Table1 Table2";
-    column-gap: 50px;
 }
 
 .grid-table-item1 {
@@ -377,3 +433,183 @@ span {
 
 
 /* Grid */
+
+.grid-section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "Title Title Title" "Text1 Text1 Text1" "Table1 Table1 Table1" "Text2 Text2 Text2";
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-section-item1 {
+    grid-area: Title;
+}
+
+.grid-section-item2 {
+    grid-area: Text1;
+}
+
+.grid-section-item3 {
+    grid-area: Table1;
+}
+
+.grid-section-item4 {
+    grid-area: Text2;
+}
+
+
+/* Sub grid for history section */
+
+.grid-history-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "T T T" "P P I";
+    align-items: left;
+    justify-content: left;
+}
+
+.grid-history-T {
+    grid-area: T;
+}
+
+.grid-history-I {
+    grid-area: I;
+}
+
+.grid-history-P {
+    grid-area: P;
+}
+
+
+/* Sub grid for history section */
+
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    /* Large Screens */
+    /* Fonts and Text */
+    .headings {
+        font-size: 3em !important;
+    }
+    .font-general {
+        font-size: 1.2em;
+    }
+    /* Fonts and Text */
+    /* General */
+    .general-settings {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* General */
+    /* Form */
+    input[type=submit],
+    input[type=reset] {
+        width: 100% !important;
+    }
+    /* Form */
+    /* Table Grid */
+    .grid-table-container {
+        grid-template-areas: "Title1 Title2" "Table1 Table2";
+        column-gap: 50px;
+    }
+    /* Table Grid */
+    /* Navbar */
+    .navbar {
+        width: 100vw;
+        height: 5rem !important;
+    }
+    .button:hover {
+        /* width: 96%; */
+        background-color: goldenrod !important;
+    }
+    .button {
+        font-size: 1.2em !important;
+    }
+    .desktop-text {
+        display: block;
+    }
+    .mobile-text {
+        display: none;
+    }
+    /* Navbar */
+}
+
+@media screen and (max-width: 600px) {
+    /* Small Screens */
+    /* Fonts and Text */
+    .headings {
+        font-size: 2em !important;
+    }
+    .font-general {
+        font-size: 1em;
+    }
+    /* Fonts and Text */
+    /* General */
+    .width-settings {
+        width: 90vw !important;
+    }
+    .general-settings {
+        width: 100vw;
+    }
+    /* General */
+    /* Form */
+    input[type=submit],
+    input[type=reset] {
+        width: 85%;
+    }
+    /* Form */
+    /* Table Grid */
+    .grid-table-container {
+        display: block;
+        /* grid-template-areas: "Title1 Title1" "Table1 Table1" "Title2 Title2" "Table2 Table2"; */
+    }
+    /* Table Grid */
+    /* Navbar */
+    .navbar {
+        width: 100vw !important;
+        height: 5rem !important;
+    }
+    .navbar-container {
+        width: 100vw;
+    }
+    .navbar-item {
+        width: 5rem;
+    }
+    .button {
+        font-size: 1em !important;
+    }
+    .navbar-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .desktop-text {
+        display: none;
+    }
+    .mobile-text {
+        display: block;
+        text-align: center !important;
+    }
+    .button {
+        padding: 25px 39px !important;
+        font-family: Georgia, serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5em !important;
+    }
+    /* Navbar */
+    /* Table */
+    /* horizontal scrollbar for tables if mobile screen */
+    .table-mobile {
+        overflow-x: auto;
+        display: block;
+        border: none;
+    }
+    /* Table */
+}
+
+
+/* Media Queries */
