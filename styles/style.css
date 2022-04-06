@@ -216,9 +216,21 @@ input[type=reset]:hover {
     margin-right: auto;
 }
 
+.figure {
+    float: right;
+}
+
 .Moz {
     background-color: greenyellow;
     animation: LightSwitch 5s linear forwards infinite;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: goldenrod !important;
 }
 
 
@@ -457,32 +469,6 @@ th {
 .grid-section-item4 {
     grid-area: Text2;
 }
-
-
-/* Sub grid for history section */
-
-.grid-history-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "T T T" "P P I";
-    align-items: left;
-    justify-content: left;
-}
-
-.grid-history-T {
-    grid-area: T;
-}
-
-.grid-history-I {
-    grid-area: I;
-}
-
-.grid-history-P {
-    grid-area: P;
-}
-
-
-/* Sub grid for history section */
 
 
 /* Media Queries */
