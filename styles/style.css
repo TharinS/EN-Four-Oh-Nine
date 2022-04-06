@@ -1,5 +1,4 @@
 * {
-    /* background-color: rgba(0, 0, 0, .65) !important; */
     color: white !important;
 }
 
@@ -221,7 +220,8 @@ input[type=reset]:hover {
 }
 
 .figure {
-    float: right;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .Moz {
@@ -528,6 +528,13 @@ th {
     .mobile-padding {
         margin-top: 90px;
     }
+    /* Topic Page */
+    aside {
+        width: 30%;
+        float: right;
+        padding: 30px;
+    }
+    /* Topic Page */
     /* Special Letters - Intro Page */
     .special-letter-container-top,
     .special-letter-container-bottom {
