@@ -12,6 +12,10 @@ body {
     background-position: center;
 }
 
+.black-font {
+    color: black !important;
+}
+
 
 /* Form Design */
 
@@ -527,7 +531,9 @@ th {
     /* Small Screens */
     /* Fonts and Text */
     .headings {
-        font-size: 2em !important;
+        font-size: 1.5em !important;
+        padding: 0;
+        text-align: left;
     }
     .font-general {
         font-size: 1em;
@@ -536,9 +542,6 @@ th {
     /* General */
     .width-settings {
         width: 90vw !important;
-    }
-    .general-settings {
-        width: 100vw;
     }
     /* General */
     /* Form */
@@ -595,6 +598,11 @@ th {
         border: none;
     }
     /* Table */
+    /* Topic Page */
+    .Moz {
+        width: 90%;
+    }
+    /* Topic Page */
 }
 
 
