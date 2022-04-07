@@ -33,13 +33,14 @@
                         <legend class="font-general">
                             <h3>Student details</h3>
                         </legend>
+                        <!-- Regular expression accepts any characters, whitespaces, symbols and disallows numbers -->
                         <p class="font-general paragraph">
                             <label for="first_name">First Name:</label>
-                            <input type="text" name="first_name" id="first_name" maxlength="30" pattern="^[a-zA-Z]+$" required="required" />
+                            <input type="text" name="first_name" id="first_name" pattern="\D{30}" required="required" />
                         </p>
                         <p class="font-general paragraph">
                             <label for="last_name">Last Name:</label>
-                            <input type="text" name="last_name" id="last_name" maxlength="30" pattern="^[a-zA-Z]+$" required="required" />
+                            <input type="text" name="last_name" id="last_name" pattern="\D{30}" required="required" />
                         </p>
                         <p class="font-general paragraph">
                             <label for="student_ID">Student ID:</label>

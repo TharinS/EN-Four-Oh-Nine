@@ -15,6 +15,11 @@ body {
     color: black !important;
 }
 
+#footer-text {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 
 /* Form Design */
 
@@ -226,7 +231,7 @@ input[type=reset]:hover {
 
 .Moz {
     background-color: greenyellow;
-    animation: LightSwitch 5s linear forwards infinite;
+    animation: LightSwitch 2s cubic-bezier(0.56, 1.66, 1, 1) forwards infinite;
 }
 
 .link {
