@@ -25,6 +25,9 @@
             </ul>
         </nav>
         <br><br>
+        <header>
+            <h1 class="header-title">En Four Oh Nein</h1>
+        </header>
         <fieldset class="fieldset-border general-settings mobile-padding">
             <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
                 <section>
@@ -36,19 +39,11 @@
                         <!-- Regular expression accepts any characters, whitespaces, symbols and disallows numbers -->
                         <p class="font-general paragraph">
                             <label for="first_name">First Name:</label>
-<<<<<<< HEAD
-                            <input type="text" name="first_name" id="first_name" pattern="\D{30}" required="required" />
-                        </p>
-                        <p class="font-general paragraph">
-                            <label for="last_name">Last Name:</label>
-                            <input type="text" name="last_name" id="last_name" pattern="\D{30}" required="required" />
-=======
                             <input type="text" name="first_name" id="first_name" pattern="^\D{1,30}$" required="required" />
                         </p>
                         <p class="font-general paragraph">
                             <label for="last_name">Last Name:</label>
                             <input type="text" name="last_name" id="last_name" pattern="^\D{1,30}$" required="required" />
->>>>>>> 61d6132c0030042c09075d3b5fa943305577e93b
                         </p>
                         <p class="font-general paragraph">
                             <label for="student_ID">Student ID:</label>
