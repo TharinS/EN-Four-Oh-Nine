@@ -11,6 +11,19 @@ body {
     background-position: center;
 }
 
+@keyframes Fade-In {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+section {
+    animation: Fade-In 3s linear 1;
+}
+
 .header-title {
     text-align: center;
     font: 40px 'Arial Black' !important;
@@ -765,106 +778,92 @@ th {
     .circle {
         position: fixed;
         background-color: white;
-        width: 90vw;
+        width: 80vw;
         height: 90vw;
-        border-radius: 50%;
-        left: 6%;
+        left: 45px;
+        bottom: 78px;
+        opacity: 10%;
     }
     /* Index page curved letter art using transform reference - https://www.geeksforgeeks.org/how-to-create-a-curve-text-using-css3-canvas/ */
-    .Letter1 {
-        transform: translate(0px, 222px) rotate(-90deg);
-    }
-    .Letter2 {
-        transform: translate(2px, 181px) rotate(-81deg);
-    }
-    .Letter3 {
-        transform: translate(20px, 135px) rotate(-70deg);
-    }
-    .Letter4 {
-        transform: translate(9px, 96px) rotate(-52deg);
-    }
-    .Letter5 {
-        transform: translate(2px, 64px) rotate(-40deg);
-    }
-    .Letter6 {
-        transform: translate(0px, 43px) rotate(-24deg);
-    }
-    .Letter7 {
-        transform: translate(0px, 27px) rotate(-17deg);
-    }
+    .Letter1,
+    .Letter2,
+    .Letter3,
+    .Letter4,
+    .Letter5,
+    .Letter6,
+    .Letter7,
     .Letter8 {
-        transform: translate(0px, 22px) rotate(-4deg);
+        transform: translate(83px, 46px);
     }
     .Letter9 {
-        transform: translate(26px, 24px) rotate(1deg);
+        /* 89 */
+        transform: translate(86px, 189px) rotate(90deg);
     }
     .Letter10 {
-        transform: translate(20px, 37px) rotate(17deg);
+        /* 109 */
+        transform: translate(52px, 209px) rotate(90deg);
     }
     .Letter11 {
-        transform: translate(25px, 59px) rotate(24deg);
+        /* 129 */
+        transform: translate(18px, 229px) rotate(90deg);
     }
     .Letter12 {
-        transform: translate(17px, 92px) rotate(40deg);
+        /* 149 */
+        transform: translate(-16px, 249px) rotate(90deg);
     }
     .Letter13 {
-        transform: translate(6px, 130px) rotate(52deg);
+        /* 147 */
+        transform: translate(221px, 247px) rotate(90deg);
     }
     .Letter14 {
-        transform: translate(-18px, 170px) rotate(70deg);
+        /* 166 */
+        transform: translate(187px, 266px) rotate(90deg);
     }
     .Letter15 {
-        transform: translate(-48px, 211px) rotate(81deg);
+        /* 183 */
+        transform: translate(153px, 283px) rotate(90deg);
     }
     .Letter16 {
-        transform: translate(-89px, 245px) rotate(90deg);
+        /* 197 */
+        transform: translate(120px, 297px) rotate(90deg);
     }
-    .Letter17 {
-        transform: translate(85px, -140px) rotate(60deg);
-    }
-    .Letter18 {
-        transform: translate(63px, -109px) rotate(52deg);
-    }
-    .Letter19 {
-        transform: translate(44px, -81px) rotate(48deg);
-    }
-    .Letter20 {
-        transform: translate(31px, -60px) rotate(37deg);
-    }
-    .Letter21 {
-        transform: translate(16px, -47px) rotate(24deg);
-    }
-    .Letter22 {
-        transform: translate(8px, -32px) rotate(19deg);
-    }
+    .Letter17,
+    .Letter18,
+    .Letter19,
+    .Letter20,
+    .Letter21,
+    .Letter22,
     .Letter23 {
-        transform: translate(0px, -24px) rotate(9deg);
+        transform: translate(92px, -28px);
     }
     .Letter24 {
-        transform: translate(0px, -22px) rotate(0deg);
+        transform: translate(0px, -22px) rotate(-90deg);
     }
     .Letter25 {
-        transform: translate(0px, -25px) rotate(-7deg);
+        transform: translate(0px, -25px) rotate(-90deg);
     }
     .Letter26 {
-        transform: translate(-8px, -36px) rotate(-22deg);
+        transform: translate(-8px, -36px) rotate(-90deg);
     }
     .Letter27 {
-        transform: translate(-16px, -52px) rotate(-32deg);
+        transform: translate(-16px, -52px) rotate(-90deg);
     }
     .Letter28 {
-        transform: translate(-29px, -70px) rotate(-38deg);
+        transform: translate(-29px, -70px) rotate(-90deg);
     }
     .Letter29 {
-        transform: translate(-43px, -94px) rotate(-44deg);
+        transform: translate(-43px, -94px) rotate(-90deg);
     }
     .Letter30 {
-        transform: translate(-61px, -122px) rotate(-49deg);
+        transform: translate(-61px, -122px) rotate(-90deg);
     }
     .Letter31 {
-        transform: translate(-86px, -150px) rotate(-57deg);
+        transform: translate(-86px, -150px) rotate(-90deg);
     }
     /* Special Letters - Intro Page */
+    .stay-at-bottom {
+        position: relative;
+    }
 }
 
 
