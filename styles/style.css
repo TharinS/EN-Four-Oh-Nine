@@ -1,5 +1,6 @@
 * {
-    color: white !important;
+    /* Makes the default font color white */
+    color: white;
 }
 
 body {
@@ -21,6 +22,7 @@ section {
 }
 
 @supports(background-clip: text) {
+    /* Checks if the current browser supports a specific feature */
     .text-gradient {
         /* Not supported in chrome */
         background-clip: text;
@@ -503,7 +505,7 @@ th {
     }
     /* Topic Page */
     aside {
-        width: 30%;
+        width: 30vw !important;
         float: right;
         padding: 30px;
     }
