@@ -728,15 +728,6 @@ th {
         transform-origin: top center;
         font: 18px Monaco, MonoSpace !important;
     }
-    .circle {
-        position: fixed;
-        background-color: #ffffff;
-        width: 80vw;
-        height: 90vw;
-        left: 45px;
-        bottom: 78px;
-        opacity: 10%;
-    }
     /* Index page curved letter art using transform reference - https://www.geeksforgeeks.org/how-to-create-a-curve-text-using-css3-canvas/ */
     .Letter1,
     .Letter2,
@@ -790,28 +781,28 @@ th {
         transform: translate(92px, -28px);
     }
     .Letter24 {
-        transform: translate(0px, -22px) rotate(-90deg);
+        transform: translate(-237px, -127px) rotate(-90deg);
     }
     .Letter25 {
-        transform: translate(0px, -25px) rotate(-90deg);
+        transform: translate(-271px, -153px) rotate(-90deg);
     }
     .Letter26 {
-        transform: translate(-8px, -36px) rotate(-90deg);
+        transform: translate(-306px, -178px) rotate(-90deg);
     }
     .Letter27 {
-        transform: translate(-16px, -52px) rotate(-90deg);
+        transform: translate(-340px, -202px) rotate(-90deg);
     }
     .Letter28 {
-        transform: translate(-29px, -70px) rotate(-90deg);
+        transform: translate(-374px, -225px) rotate(-90deg);
     }
     .Letter29 {
-        transform: translate(-43px, -94px) rotate(-90deg);
+        transform: translate(-155px, -268px) rotate(-90deg);
     }
     .Letter30 {
-        transform: translate(-61px, -122px) rotate(-90deg);
+        transform: translate(-188px, -287px) rotate(-90deg);
     }
     .Letter31 {
-        transform: translate(-86px, -150px) rotate(-90deg);
+        transform: translate(-220px, -306px) rotate(-90deg);
     }
     /* Special Letters - Intro Page */
     .stay-at-bottom {
