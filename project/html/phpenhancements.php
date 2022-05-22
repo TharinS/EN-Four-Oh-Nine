@@ -15,29 +15,14 @@
 </head>
 
 <body>
-    <nav class="banner-background navbar">
-        <ul class="navbar-container">
-            <li class="navbar-item">
-                <a class="button" href="index.html">
-                    <span class="desktop-text">Index</span>
-                    <span class="mobile-text">I</span>
-                </a>
-            </li>
-            <li class="navbar-item"><a class="button" href="topic.html"><span class="desktop-text">Topic</span><span
-                        class="mobile-text">T</span></a></li>
-            <li class="navbar-item"><a class="button" href="quiz.html"><span class="desktop-text">Quiz</span><span
-                        class="mobile-text">Q</span></a></li>
-            <li class="navbar-item"><a class="button active" href="enhancements.html"><span
-                        class="desktop-text black-font">Enhancement</span><span
-                        class="mobile-text black-font">E</span></a></li>
-        </ul>
-    </nav>
+    <?php
+        $activePage = "php";   
+        include("menu.inc");
+    ?>
     <!-- Breaks nav bar if not used -->
     <br><br><br><br>
     <main>
-        <header>
-            <h1 class="header-title  text-gradient">En Four Oh Nein</h1>
-        </header>
+        <?php include("header.inc") ?>
         <section>
             <fieldset class="fieldset-settings general-settings">
                 <h2 class="font-general headings">Enhancement 1 - Responsive Design</h2>
@@ -51,7 +36,7 @@
                 </ol>
                 <p class="font-general paragraph">Sources - <a class="link" href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">w3schools - Responsive Web Design</a></p>
                 <br><br>
-                <a href="index.html" class="go-button">Go to Example</a>
+                <a href="index.php" class="go-button">Go to Example</a>
             </fieldset>
         </section>
         <section>
@@ -66,16 +51,13 @@
                 </ul>
                 <p class="font-general paragraph">Sources - <a class="link" href="https://www.w3schools.com/css/css3_animations.asp">w3schools - Animations</a></p>
                 <br><br>
-                <a href="index.html" class="go-button">Go to Example</a>
+                <a href="index.php" class="go-button">Go to Example</a>
             </fieldset>
 
         </section>
         <br><br><br><br>
-        <footer class="footer center font-general banner-background">
-            <a class="git-button" href="https://github.com/TharinS/EN-Four-Oh-Nine">Github</a>
-            <a class="owner-button" href="mailto:103166002@student.swin.edu.au">Contact Owner</a>
-        </footer>
     </main>
+        <?php include("footer.inc") ?>
 </body>
 
 </html>

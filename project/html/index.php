@@ -15,20 +15,23 @@
 </head>
 
 <body>
+    <?php
+            $activePage = "index";   
+            include("menu.inc") 
+        ?>
     <main>
-        <nav class="banner-background navbar">
+        <!-- <nav class="banner-background navbar">
             <ul class="navbar-container">
-                <li class="navbar-item"><a class="button active" href="index.html"><span class="desktop-text black-font">Index</span><span class="mobile-text black-font">I</span></a></li>
-                <li class="navbar-item"><a class="button" href="topic.html"><span class="desktop-text">Topic</span><span class="mobile-text">T</span></a></li>
-                <li class="navbar-item"><a class="button" href="quiz.html"><span class="desktop-text">Quiz</span><span class="mobile-text">Q</span></a></li>
-                <li class="navbar-item"><a class="button" href="enhancements.html"><span class="desktop-text">Enhancement</span><span class="mobile-text">E</span></a></li>
+                <li class="navbar-item"><a class="button active" href="index.php"><span class="desktop-text black-font">Index</span><span class="mobile-text black-font">I</span></a></li>
+                <li class="navbar-item"><a class="button" href="topic.php"><span class="desktop-text">Topic</span><span class="mobile-text">T</span></a></li>
+                <li class="navbar-item"><a class="button" href="quiz.php"><span class="desktop-text">Quiz</span><span class="mobile-text">Q</span></a></li>
+                <li class="navbar-item"><a class="button" href="enhancements.php"><span class="desktop-text">Enhancement</span><span class="mobile-text">E</span></a></li>
             </ul>
-        </nav>
+        </nav> -->
+        
         <br><br><br><br>
-        <header>
-            <h1 class="header-title text-gradient">En Four Oh Nein</h1>
-        </header>
-        <div class="special-letter-container-top">
+        <?php include("header.inc") ?>
+        <div class="special-letter-container-top mobile-shift">
             <span class="Letter1">A</span>
             <span class="Letter2">N</span>
             <span class="Letter3">I</span>
@@ -46,11 +49,11 @@
             <span class="Letter15">L</span>
             <span class="Letter16">E</span>
         </div>
-        <div class="mobile-padding">
+        <div class="mobile-padding mobile-shift">
             <img class="logo" src="../Images/APNGLogoNoBackground.png" alt="Website Logo">
         </div>
         <br><br><br>
-        <div>
+        <div class="mobile-shift">
             <fieldset class="fieldset-settings">
                 <a class="youtube-button" href="https://youtu.be/jNQcJMdh-mM">
                     <div class="youtube-triangle">
@@ -59,7 +62,7 @@
                 </a>
             </fieldset>
         </div>
-        <div class="special-letter-container-bottom">
+        <div class="special-letter-container-bottom mobile-shift">
             <span class="Letter17">N</span>
             <span class="Letter18">E</span>
             <span class="Letter19">T</span>
@@ -76,9 +79,12 @@
             <span class="Letter30">C</span>
             <span class="Letter31">S</span>
         </div>
-        <br><br><br><br>
-        <footer class="footer center font-general banner-background stay-at-bottom"><a class="git-button" href="https://github.com/TharinS/EN-Four-Oh-Nine">Github</a><a class="owner-button" href="mailto:103166002@student.swin.edu.au">Contact Owner</a></footer>
+        
     </main>
+    <?php 
+            $stayAtBottom = true;
+            include("footer.inc") 
+        ?>
 </body>
 
 </html>
