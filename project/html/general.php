@@ -7,7 +7,7 @@
     }
 
     function isItStudentID($data) {
-    	if(preg_match("/^[\d]{9}$/", $data)) {
+    	if(preg_match("/^[\d]{7}$|^[\d]{10}$/", $data)) {
     		return true;
     	} 
     	return false;
